@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/28/user/824695).
-* Наставник: `Неизвестно`.
+* Студент: [Янковский Юрий](https://up.htmlacademy.ru/htmlcss/28/user/824695).
+* Наставник: [Юрий Головин] (https://htmlacademy.ru/profile/id520167).
 
 ---
 
