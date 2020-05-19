@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Техномарт</title>
+</head>
+<body>
 <header class="header">
   <div class="cap">
     <img class="logo" src="#" alt="">
     <div class="search">
       <div class="emoji"></div>
-      <div class="item">Поиск:</div>
+      <span class="item">Поиск:</span>
     </div>
     <div class="bookmark">
       <div class="emoji"></div>
       <a class="item" href="#">Закладки</a>
-      <div class="counter">0</div>
+      <span class="counter">0</span>
     </div>
     <div class="basket">
       <div class="emoji"></div>
       <a class="item" href="#">Корзина:</a>
-      <div class="counter">0</div>
+      <span class="counter">0</span>
     </div>
     <a href="#" class="checkout">Оформить заказ</a>
   </div>
 
   <div class="communication">
-    <div><i>Интернет-магазин<br> строительных материалов <br>и инструментов для ремонта</i></div>
+    <div><i>
+      <p>Интернет-магазин</p>
+      <p>строительных материалов</p>
+      <p>и инструментов для ремонта</p>
+    </i></div>
+
     <div class="contact">
       <div class="phone">
         <div class="emoji"></div>
@@ -37,8 +42,9 @@
 
     <div>
       <button class="enter">
-        <div class="emoji" style="background-color: darkred; width: 10px; height: 10px" ></div>
-        Войти</button>
+        <div class="emoji" style="background-color: darkred; width: 10px; height: 10px"></div>
+        Войти
+      </button>
       <a href="#">Регистрация</a>
     </div>
   </div>
@@ -59,84 +65,150 @@
   <h1>Техномарт</h1>
   <section class="product">
     <div class="row">
+
       <div class="box">
-        <h2>Материалы</h2>
+        <h3>Материалы</h3>
         <a href="#">На любой вкус</a>
-        <div class="img">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="img2"></div>
+        <div class="emoji"></div>
+        <div class="emoji2"></div>
       </div>
 
       <div class="box2">
-        <h2>Инструмент</h2>
+        <h3>Инструмент</h3>
         <a href="#">На все случаи</a>
-        <div class="img">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <div class="emoji"></div>
       </div>
 
       <div class="box3">
-        <h2>Техника</h2>
+        <h3>Техника</h3>
         <a href="#">Для стройки</a>
-        <div class="box3-img">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <div class="emoji"></div>
       </div>
     </div>
 
     <div class="row2">
       <div class="widget">
         <div>
-          <p>ПЕРФАРАТОРЫ</p>
-          <p>Настоящие мужские игрушки</p>
+          <span>Перфараторы</span>
+          <span>Настоящие мужские игрушки</span>
         </div>
-        <div class="emoji"><</div>
-        <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+        <div class="emoji"></div>
+        <a href="#">Открыть каталог</a>
       </div>
 
       <div class="column">
         <div class="box4">
-          <h2>Скидка 50%</h2>
-          <a href="#">На 350 ТОВАРОВ</a>
-          <div class="img">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <h3>Скидка 50%</h3>
+          <a href="#">На 350 товаров</a>
+          <div class="emoji"></div>
         </div>
 
         <div class="box5">
-          <h2>Доставка</h2>
-          <a href="#">БЕСПЛАТНО</a>
-          <div class="img">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <h3>Доставка</h3>
+          <a href="#">Бесплатно</a>
+          <div class="emoji" alt=""></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="pop-product"></section>
-  <section class="pop-firm"></section>
-  <section class="service"></section>
+  <section class="pop-product">
+    <div class="title">
+      <h2>Популярные товары:</h2>
+      <a href="#">Все популярные товары</a>
+    </div>
 
+    <div class="sorting-block">
+      <!--такое же название класса как и в catalog.html-->
+      <article>
+        <img src="#" alt="">
+        <a href="">Перфоратор BOSCH<br>
+          BFG 9000</a>
+        <del>32500 Р.</del>
+        <span>25500 Р.</span>
+      </article>
+
+      <article>
+        <div class="emoji"></div>
+        <img src="#" alt="">
+        <a href="#">Перфоратор BOSCH<br>
+          BFG 3000</a>
+        <del>22500 Р.</del>
+        <span>15500 Р.</span>
+      </article>
+
+      <article>
+        <img src="#" alt="">
+        <a href="#">Перфоратор BOSCH<br>
+          BFG 6000</a>
+        <del>30500 Р.</del>
+        <span>25500 Р.</span>
+      </article>
+
+      <article>
+        <div class="emoji"></div>
+        <img src="#" alt="">
+        <a href="#">Перфоратор BOSCH<br>
+          BFG 2000</a>
+        <del>12500 Р.</del>
+      </article>
+    </div>
+  </section>
+
+  <section class="pop-firm">
+    <div class="title">
+      <h2>Популярные производители:</h2>
+      <button>Все производители</button>
+    </div>
+    <div class="row">
+      <div><img src="#"></div>
+      <div><img src="#"></div>
+      <div><img src="#"></div>
+      <div><img src="#"></div>
+    </div>
+    <div class="row2">
+      <div><img src="#"></div>
+      <div><img src="#"></div>
+      <div><img src="#"></div>
+      <div><img src="#"></div>
+    </div>
+  </section>
+
+  <section class="service">
+    <span>Сервисы</span>
+    <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+    <p>Мы стараемся из всех сил, чтобы сделать ваши покупки приятными.</p>
+
+
+  <div class="delivery">
+    <div class="box">
+    <button>Доставка</button>
+    <button>Гарантия</button>
+    <button>Кредит</button>
+    </div>
+    <div class="box2">
+    <h2>Доставка</h2>
+    <p>
+      Мы с удовольствием доставим ваш товар прямо<br>
+      к вашему подъезду совершенно бесплатно!<br>
+      Ведь мы не плохо заработаем,<br>
+      поднимая его на ваш этаж!
+    </p>
+    </div>
+    <div class="box3"></div>
+  </div>
+
+
+  </section>
   <section class="company">
 
     <section class="about-us">
-      <h3>КОМПАНИЯ «Техномарт»</h3>
-      <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
-        равнодушными любителей сэкономить на гастарбайтарах</p>
+      <h2>Компания «Техномарт»</h2>
+      <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для<br>
+        ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
+        гастарбайтарах</p>
       <p> Мы можем доставить ваш товар в самые отдельные точки России!<br>
-      Техномарт работает со многими транспортными компаниями:
+        Техномарт работает со многими транспортными компаниями:
       </p>
       <ul>
         <li>Деловые линии Автотр</li>
@@ -147,12 +219,12 @@
     </section>
 
     <section class="contact">
-      <h3>КОНТАКТЫ</h3>
+      <h2>Контакты</h2>
       <p>Вы можете забрать товарсами,<br>
-      заехав в наш офис:
+        заехав в наш офис:
       </p>
       <img src="#" alt="">
-      <button>ЗАБЛУДИЛИСЬ НАПИШИТЕ НАМ!</button>
+      <button>Заблудились напишите нам!</button>
     </section>
   </section>
 </main>
@@ -163,13 +235,13 @@
     <ul>
       <li><a href="#">Компания</a></li>
       <li><a href="#">Новости</a></li>
-      <li><a>Каталог</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
   </nav>
-  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-    <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+  <div><p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
   <ul>
     <li><a href="#">Материалы</a></li>
     <li><a href="#">Техника</a></li>
@@ -177,21 +249,24 @@
     <li><a href="#">Спецпредложения</a></li>
   </ul>
   <div>
-    <p>© 2010–2019 Компания 	&#171;Техномарт&#187; <br>
-      Все права защищены
-    </p>
+    <div>
+      <span>© 2010–2019 Компания 	&#171;Техномарт&#187;</span>
+      <span>Все права защищены</span>
+    </div>
     <ul>
       <li><a href="#">вк</a></li>
       <li><a href="#">facebook</a></li>
       <li><a href="#">инстаграм</a></li>
     </ul>
-    <p>Обратная связь:<br>
-      <a  mailto:mail@htmlacademy.ru>mail@htmlacademy.ru</a>
-    </p>
-    <p>Разработано -<br>
+    <div>
+      <span>Обратная связь:</span>
+      <a mailto:mail@htmlacademy.ru>mail@htmlacademy.ru</a>
+    </div>
+    <div>
+      <span>Разработано -</span>
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-    </p>
+    </div>
   </div>
 </footer>
-  </body>
+</body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог</title>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
 </head>
 <body>
 <header class="header">
@@ -10,23 +10,28 @@
     <img class="logo" src="#" alt="">
     <div class="search">
       <div class="emoji"></div>
-      <div class="item">Поиск:</div>
+      <span class="item">Поиск:</span>
     </div>
     <div class="bookmark">
       <div class="emoji"></div>
       <a class="item" href="#">Закладки</a>
-      <div class="counter">0</div>
+      <span class="counter">0</span>
     </div>
     <div class="basket">
       <div class="emoji"></div>
       <a class="item" href="#">Корзина:</a>
-      <div class="counter">0</div>
+      <span class="counter">0</span>
     </div>
     <a href="#" class="checkout">Оформить заказ</a>
   </div>
 
   <div class="communication">
-    <div>Интернет-магазин<br> строительных материалов <br>и инструментов для рем</div>
+    <div><i>
+      <p>Интернет-магазин</p>
+      <p>строительных материалов</p>
+      <p>и инструментов для ремонта</p>
+    </i></div>
+
     <div class="contact">
       <div class="phone">
         <div class="emoji"></div>
@@ -35,31 +40,26 @@
       </div>
     </div>
 
-    <div class="user">
-    <div class="user-name">
-      <div class="emoji"></div>
-      <div class="name">Равшан Джамшутович</div>
-      <div class="emoji2"></div>
-    </div>
-      <div class="user-row">
-        <a href="#">Мои заказы</a>
-        <div class="emoji"></div>
-        <a href="#">Личный кабинет</a>
-      </div>
+    <div>
+      <button class="enter">
+        <div class="emoji" style="background-color: darkred; width: 10px; height: 10px"></div>
+        Войти
+      </button>
+      <a href="#">Регистрация</a>
     </div>
   </div>
-
   <nav class="nav">
     <ul>
-      <li><a href="index.html">Главная</a></li>
+      <li><a>Главная</a></li>
       <li><a href="#">Компания</a></li>
-      <li><a>Каталог</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
       <li><a href="#">Новости</a></li>
       <li><a href="#">Спецпредложения</a></li>
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
   </nav>
+
 </header>
 
 <main>
@@ -82,19 +82,24 @@
       </ul>
     </div>
 
-      <div class="perforator">ПЕРФАРАТОРЫ</div>
+    <h1 class="perforator">ПЕРФАРАТОРЫ</h1>
 
     <aside>
-      <div>ФИЛЬТР:</div>
-
-      <div>ЦЕНА:</div>
-      <div></div>
-      <hr>
-
+      <div class="box-filter">
+        <span>ФИЛЬТР:</span>
+        <span>ЦЕНА:</span>
+        <input type="range" min="0" max="100" step="1" value="50">
+        <div class="row">
+          <span>0</span>
+          <span>-</span>
+          <span>30000</span>
+        </div>
+        <hr>
+      </div>
 
 
       <form action="proizvoditel.php">
-        <p>ПРОИЗВОДИТЕЛИ:</p>
+        <span>ПРОИЗВОДИТЕЛИ:</span>
         <p><input type="checkbox" name="a" value="BOSH"> BOSCH</p>
         <p><input type="checkbox" name="a" value="ИНТЕРСКОП" checked> ИНТЕРСКОП</p>
         <p><input type="checkbox" name="a" value="MAKITA" checked> MAKITA</p>
@@ -102,7 +107,7 @@
         <p><input type="checkbox" name="a" value="HITACHI"> HITACHI</p>
         <hr>
 
-        <p>ПИТАНИЕ:</p>
+        <span>ПИТАНИЕ:</span>
         <p><input type="radio" name="a" value="АККУМУЛЯТОРНЫЕ"> АККУМУЛЯТОРНЫЕ</p>
         <p><input type="radio" name="a" value="СЕТЕВЫЕ"> СЕТЕВЫЕ</p>
 
@@ -110,7 +115,14 @@
       </form>
     </aside>
 
-    <div class="sort"></div>
+    <div class="sort-row">
+      <span>Сортировка:</span>
+      <button>По цене</button>
+      <button>По типу</button>
+      <button>По фунционалу</button>
+      <button><div class="sort-up"></div></button>
+      <button><div class="sort-low"></div></button>
+    </div>
 
     <div class="sorting-block">
       <article>
@@ -118,7 +130,7 @@
         <a href="">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>30500 Р.</del>
-        <div>25500 Р.</div>
+        <span>25500 Р.</span>
       </article>
 
       <article>
@@ -126,7 +138,7 @@
         <a href="">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>30500 Р.</del>
-        <div>25500 Р.</div>
+        <span>25500 Р.</span>
       </article>
 
       <article>
@@ -139,7 +151,7 @@
         <a href="#">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>30500 Р.</del>
-        <div>25500 Р.</div>
+        <span>25500 Р.</span>
       </article>
 
       <article>
@@ -148,7 +160,7 @@
         <a href="#">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>22500 Р.</del>
-        <div>15500 Р.</div>
+        <span>15500 Р.</span>
       </article>
 
       <article>
@@ -156,7 +168,7 @@
         <a href="">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>30500 Р.</del>
-        <div>25500 Р.</div>
+        <span>25500 Р.</span>
       </article>
 
       <article>
@@ -165,7 +177,7 @@
         <a href="#">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>22500 Р.</del>
-        <div>12500 Р.</div>
+        <span>12500 Р.</span>
       </article>
 
       <article>
@@ -174,7 +186,7 @@
         <a href="#">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>22500 Р.</del>
-        <div>15500 Р.</div>
+        <span>15500 Р.</span>
       </article>
 
       <article>
@@ -182,7 +194,7 @@
         <a href="#">Перфоратор BOSCH<br>
           BFG 6000</a>
         <del>30500 Р.</del>
-        <div>25500 Р.</div>
+        <span>25500 Р.</span>
       </article>
 
       <article>
@@ -190,14 +202,34 @@
         <img src="#" alt="">
         <a href="#">Перфоратор BOSCH<br>
           BFG 6000</a>
-        <div>12500 Р.</div>
+        <span>12500 Р.</span>
       </article>
     </div>
 
     <div class="number-page"></div>
-
+    <div class="pages">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>Следующая</button>
+    </div>
   </section>
-  <section class="about-perforator"></section>
+
+  <section class="about-perforator">
+    <h2>ПАРА СЛОВ О ПЕРФОРАТ</h2>
+    <p>
+      Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кипиче,
+      бетоне и камне.
+    </p>
+    <p>
+      Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнятьь функции дрели,
+      шуруповерта и отбойного молотка.
+    </p>
+    <p>
+      В ассортиментном ряду выбор &#171;трехрежимников&#187;: в одном устройстве будут совмещены отбойный молоток и
+      ударная дрель.
+    </p>
+  </section>
 
 </main>
 <footer class="footer">
@@ -206,13 +238,16 @@
     <ul>
       <li><a href="#">Компания</a></li>
       <li><a href="#">Новости</a></li>
-      <li><a>Каталог</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
+
   </nav>
-  <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-    <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+  <div>
+    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+    <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+  </div>
   <ul>
     <li><a href="#">Материалы</a></li>
     <li><a href="#">Техника</a></li>
@@ -220,20 +255,23 @@
     <li><a href="#">Спецпредложения</a></li>
   </ul>
   <div>
-    <p>© 2010–2019 Компания 	&#171;Техномарт&#187; <br>
-      Все права защищены
-    </p>
+    <div>
+      <span>© 2010–2019 Компания 	&#171;Техномарт&#187;</span>
+      <span>Все права защищены</span>
+    </div>
     <ul>
       <li><a href="#">вк</a></li>
       <li><a href="#">facebook</a></li>
       <li><a href="#">инстаграм</a></li>
     </ul>
-    <p>Обратная связь:<br>
-      <a  mailto:mail@htmlacademy.ru>mail@htmlacademy.ru</a>
-    </p>
-    <p>Разработано -<br>
+    <div>
+      <span>Обратная связь:</span>
+      <a mailto:mail@htmlacademy.ru>mail@htmlacademy.ru</a>
+    </div>
+    <div>
+      <span>Разработано -</span>
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-    </p>
+    </div>
   </div>
 </footer>
 </body>
