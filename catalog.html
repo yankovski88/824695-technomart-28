@@ -41,7 +41,7 @@
     </div>
 
     <div>
-      <button type="submit" class="enter" aria-label="кнопка войти">
+      <button type="button" class="enter" aria-label="кнопка войти">
         <div class="emoji" style="background-color: darkred; width: 10px; height: 10px"></div>
         Войти
       </button>
@@ -67,21 +67,21 @@
   <section class="catalog">
 
     <!--<div class="navigation">-->
-      <!--<div class="emoji"></div>-->
-      <!--<ul>-->
-        <!--<li>-->
-          <!--<div class="emoji"></div>-->
-          <!--<button type="button">КАТАЛОГ</button>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<div class="emoji2"></div>-->
-          <!--<button type="button">ИНСТРУМЕНТ</button>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<div class="emoji3"></div>-->
-          <!--<button type="button">ПЕРФОРАТОРЫ</button>-->
-        <!--</li>-->
-      <!--</ul>-->
+    <!--<div class="emoji"></div>-->
+    <!--<ul>-->
+    <!--<li>-->
+    <!--<div class="emoji"></div>-->
+    <!--<button type="button">КАТАЛОГ</button>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<div class="emoji2"></div>-->
+    <!--<button type="button">ИНСТРУМЕНТ</button>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<div class="emoji3"></div>-->
+    <!--<button type="button">ПЕРФОРАТОРЫ</button>-->
+    <!--</li>-->
+    <!--</ul>-->
     <!--</div>-->
 
     <div>
@@ -107,19 +107,19 @@
       </div>
 
 
-      <form class="firms" action="https://echo.htmlacademy.ru" method="get">
+      <form class="firms" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>ПРОИЗВОДИТЕЛИ:</legend>
           <p><input type="checkbox" id="filter-BOSH" name="BOSCH" checked>
             <label for="filter-BOSH"> BOSCH</label></p>
-          <p><input type="checkbox" id="filter-ИНТЕРСКОП" name="ИНТЕРСКОП">
-            <label for="filter-ИНТЕРСКОП">ИНТЕРСКОП</label></p>
-          <p><input type="checkbox" id="filter-MAKITA" name="MAKITA" checked>
-            <label for="filter-MAKITA"> MAKITA</label></p>
-          <p><input type="checkbox" id="filter-DEWALT" name="DEWALT">
-            <label for="filter-DEWALT"> DEWALT</label></p>
-          <p><input type="checkbox" id="filter-HITACHI" name="HITACHI">
-            <label for="filter-HITACHI"> HITACHI</label></p>
+          <p><input type="checkbox" id="filter-interskop" name="ИНТЕРСКОП">
+            <label for="filter-interskop">ИНТЕРСКОП</label></p>
+          <p><input type="checkbox" id="filter-makita" name="MAKITA" checked>
+            <label for="filter-makita"> MAKITA</label></p>
+          <p><input type="checkbox" id="filter-dewalt" name="DEWALT">
+            <label for="filter-dewalt"> DEWALT</label></p>
+          <p><input type="checkbox" id="filter-hitachi" name="HITACHI">
+            <label for="filter-hitachi"> HITACHI</label></p>
         </fieldset>
         <hr>
 
@@ -133,7 +133,7 @@
             <label for="filter-electrical"> СЕТЕВЫЕ</label></p>
         </fieldset>
 
-        <button type="submit">ПОКАЗАТЬ</button>
+        <button>ПОКАЗАТЬ</button>
       </form>
     </section>
 
@@ -152,15 +152,15 @@
 
     <div class="sorting-block">
       <article>
-        <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+        <img src="img/snippet-945_copy_2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         <a href="">Перфоратор BOSCH
           BFG 6000</a>
-        <del>30500 Р.</del>
+        <span>30500 Р.</span>
         <span>25500 Р.</span>
       </article>
 
       <article>
-        <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+        <img src="img/snippet-945_copy_2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         <a href="#">Перфоратор BOSCH
           BFG 6000</a>
         <span>30500 Р.</span>
@@ -183,21 +183,23 @@
         <span>25500 Р.</span>
       </article>
 
-<div class="add-basket">
-  <button class="close"><div class="close-img"></div></button>
-  <div class="row-basket">
-    <div class="daw-img"></div>
-    <span>Товар добавлен в корзину!</span>
-  </div>
-  <div class="button-row">
-    <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
-    <button>ПРОДОЛЖИТЬ ПОКУПКИ</button>
-  </div>
-</div>
+      <div class="add-basket">
+        <button type="button" class="close">
+          <div class="close-img"></div>
+        </button>
+        <div class="row-basket">
+          <div class="daw-img"></div>
+          <span>Товар добавлен в корзину!</span>
+        </div>
+        <div class="button-row">
+          <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
+          <button type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        </div>
+      </div>
 
       <article>
         <div class="emoji"></div>
-        <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+        <img src="img/snippet-18927_copy_3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
         <a href="#">Перфоратор BOSCH
           BFG 3000</a>
         <span>22500 Р.</span>
@@ -205,7 +207,7 @@
       </article>
 
       <article>
-        <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+        <img src="img/snippet-945_copy_2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         <a href="">Перфоратор BOSCH
           BFG 6000</a>
         <span>30500 Р.</span>
@@ -214,7 +216,7 @@
 
       <article>
         <div class="emoji"></div>
-        <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+        <img src="img/snippet-18927_copy_3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
         <a href="#">Перфоратор BOSCH
           BFG 2000</a>
         <span>12500 Р.</span>
@@ -222,7 +224,7 @@
 
       <article>
         <div class="emoji"></div>
-        <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+        <img src="img/snippet-18927_copy_3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
         <a href="#">Перфоратор BOSCH
           BFG 3000</a>
         <span>22500 Р.</span>
@@ -230,7 +232,7 @@
       </article>
 
       <article>
-        <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+        <img src="img/snippet-945_copy_2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         <a href="#">Перфоратор BOSCH
           BFG 6000</a>
         <span>30500 Р.</span>
@@ -239,7 +241,7 @@
 
       <article>
         <div class="emoji"></div>
-        <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+        <img src="img/snippet-18927_copy_3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
         <a href="#">Перфоратор BOSCH
           BFG 2000</a>
         <span>12500 Р.</span>
