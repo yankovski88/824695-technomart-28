@@ -262,14 +262,20 @@ legend {
   margin-left: 8px;
 }
 
-.item-search:before {
+.search-button {
   content: "";
   display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
   width: 17px;
   height: 17px;
+}
+.input-search{
 }
 
 .bookmark {
@@ -473,6 +479,7 @@ legend {
 }
 
 .phone-number {
+
   display: flex;
   color: var(--basic-red);
   font-family: "Cuprum", Arial, sans-serif;
@@ -483,29 +490,31 @@ legend {
   background: var(--basic-white-light);
   align-items: center;
   width: 270px;
-  /*padding-right: auto;*/
-  /*padding-left: auto;*/
-  padding-top: 8px;
-  padding-bottom: 8px;
+  /*padding-top: 7px;*/
+  /*padding-bottom: 8px;*/
   border: 3px solid var(--basic-white);
   /*height: 45px;*/
 }
-
-.phone-number:hover {
-  color: var(--basic-red);
-}
-
-.phone-icon {
+.phone-number:before{
+content: "";
   /*position: absolute;*/
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 19px;
   margin-right: 17px;
-  /*border: black solid 1px;*/
-  margin-left: 40px;
-  /*padding-left: 40px;*/
+  margin-left: 39px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+
 }
+
+.phone-number:hover {
+  color: var(--basic-red);
+}
+
+
 
 .address-header {
   font-family: "Cuprum", Arial, sans-serif;;
@@ -542,7 +551,7 @@ svg path {
   justify-content: center;
   align-items: center;
   width: 121px;
-  height: 45px;
+  min-height: 45px;
   border: none;
   /*background: rgba(0, 0, 0, 0.0001);*/
   background: var(--basic-white);
@@ -760,7 +769,7 @@ svg path {
 }
 
 .box-icon {
-  background-image: url("../img/icon-1.svg");
+  background-image: url("../img/pail.svg");
   width: 44px;
   height: 65px;
   margin-top: -39px;
@@ -768,7 +777,7 @@ svg path {
 }
 
 .box-icon-new {
-  background-image: url("../img/Каталог new.svg");
+  background-image: url("../img/icon_new.svg");
   width: 70px;
   height: 70px;
   display: flex;
@@ -794,7 +803,7 @@ svg path {
 }
 
 .box2-icon {
-  background-image: url("../img/icon-2.svg");
+  background-image: url("../img/drill.svg");
   width: 75px;
   height: 61px;
 }
@@ -808,14 +817,14 @@ svg path {
 }
 
 .box3-icon {
-  background-image: url("../img/icon-3.svg");
+  background-image: url("../img/tractor.svg");
   width: 78px;
   height: 62px;
 }
 
 .widget {
   grid-area: w;
-  background-image: url("../img/layer_99.jpg");
+  background-image: url("../img/widget.jpg");
   width: 620px;
   height: 266px;
 }
@@ -857,13 +866,17 @@ svg path {
 }
 
 .widget-icon-left {
-  background-image: url("../img/Shape.svg");
+  border: none;
+  background: none;
+  background-image: url("../img/icon-left.svg");
   width: 21px;
   height: 39px;
 }
 
 .widget-icon-right {
-  background-image: url("../img/Shape-right.svg");
+  border: none;
+  background: none;
+  background-image: url("../img/icon-right.svg");
   width: 21px;
   height: 39px;
 }
@@ -947,7 +960,7 @@ svg path {
 }
 
 .box4-icon {
-  background-image: url("../img/icon-4.svg");
+  background-image: url("../img/truck.svg");
   width: 59px;
   height: 72px;
 }
@@ -961,7 +974,7 @@ svg path {
 }
 
 .box5-icon {
-  background-image: url("../img/icon-5.svg");
+  background-image: url("../img/car.svg");
   width: 78px;
   height: 63px;
 }
@@ -1078,7 +1091,7 @@ svg path {
 }
 
 .icon-new {
-  background-image: url("../img/Каталог new.svg");
+  background-image: url("../img/icon_new.svg");
   width: 70px;
   height: 70px;
   margin-left: 150px;
@@ -1231,7 +1244,7 @@ svg path {
   height: 279px;
   margin-left: -10px;
   margin-top: -45px;
-  background: url("../img/Object_shadow.svg") no-repeat;
+  background: url("../img/shadow.svg") no-repeat;
 }
 
 .box-delivery {
@@ -1263,7 +1276,7 @@ svg path {
 }
 
 .delivery-img {
-  background-image: url("../img/layer_131_1.png");
+  background-image: url("../img/delivery.png");
   width: 468px;
   height: 261px;
   margin-left: -160px;
@@ -1283,13 +1296,13 @@ svg path {
 .about-us-contact {
   /*убираю бордер и становится непонятное расстояние*/
   height: 496px;
-  border: black solid 1px;
+  /*border: black solid 1px;*/
 }
 
 .contact-row {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  padding-top: 70px;
   height: auto;
 }
 
@@ -1555,12 +1568,11 @@ svg path {
   background-color: var(--basic-black-dark);
   display: flex;
   min-height: 107px;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 34px;
 }
 
 .footer-low-text {
-  max-width: 250px;
+  width: 250px;
   min-height: 37px;
   font-family: "Cuprum", Arial, sans-serif;
   font-style: normal;
@@ -1572,6 +1584,7 @@ svg path {
 }
 
 .social-list {
+  margin-left: 139px;
   padding: 0;
   display: flex;
   /*width: 134px;*/
@@ -1605,6 +1618,7 @@ svg path {
   flex-direction: column;
   max-width: 145px;
   min-height: 37px;
+  margin-left: 118px;
 }
 
 .footer-low-column1 span {
@@ -1621,6 +1635,7 @@ svg path {
   flex-direction: column;
   max-width: 98px;
   min-height: 37px;
+  margin-left: 51px;
 }
 
 .footer-low-column2 span {
@@ -1651,7 +1666,7 @@ svg path {
 }
 
 .guarantee-img {
-  background-image: url("../img/layer_130.png");
+  background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   width: 389px;
   height: 283px;
@@ -1665,27 +1680,38 @@ svg path {
 }
 
 .credit-img {
-  background-image: url("../img/layer_119.png");
+  background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   width: 465px;
   height: 285px;
   margin-left: -147px;
 }
 
-.map-wrap {
+.modal-map {
   width: 943px;
   height: 449px;
   display: flex;
-  padding: 0;
-  margin: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 .map {
-  padding: 0;
-  margin: 0;
+
+}
+.map-none{
+  display: none;
+
+}
+.map-active{
+  display: flex;
 }
 
 .close-img {
+  z-index: 1;
   background: none;
   padding: 0;
   margin: 0;
@@ -1696,10 +1722,21 @@ svg path {
   height: 21px;
   margin-left: -49px;
   margin-top: 29px;
-
+}
+.close-img-none{
+  display: none;
+}
+.close-img-active{
+  display: flex;
 }
 
 .write_us {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
   border-top: 7px solid var(--basic-red-light);
   width: 620px;
   height: 430px;
@@ -1708,7 +1745,31 @@ svg path {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.modal{
+  display: none;
+}
+.modal-show{
+  display: flex;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
 
+@keyframes shake {
+  0%, 100%{transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.modal-error{
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
 }
 
 .write_us-wrap {
@@ -2101,7 +2162,6 @@ fieldset p {
   min-width: 700px;
   grid-gap: 20px;
   margin-bottom: 48px;
-  background: #DC91D8;
 }
 
 .card-catalog {
@@ -2114,16 +2174,16 @@ fieldset p {
 
 .box-icon-new-catalog {
   position: absolute;
-  background-image: url("../img/Каталог new.svg");
+  background-image: url("../img/icon_new.svg");
   width: 70px;
   height: 70px;
   display: flex;
-  margin-left: 150px;
+  margin-left: 148px;
   /*margin-right: 0;*/
 }
 
 .img-catalog-wrap {
-  width: 220px;
+  width: 218px;
   /*ПОчему 220px по макету не подходит ведь там бордер указан*/
   height: 179px;
   background: var(--basic-white);
@@ -2135,7 +2195,12 @@ fieldset p {
 .img-catalog {
   object-fit: contain;
 }
-
+.wrap-product{
+  min-height: 139px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .link-product-catalog {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
