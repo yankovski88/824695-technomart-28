@@ -18,6 +18,15 @@ mapClose.addEventListener("click", function (evt) {
   popupMap.classList.remove("map-active")
 });
 
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popupMap.classList.contains("map-active")) {
+      evt.preventDefault();
+      popupMap.classList.remove("map-active");
+    }
+  }
+});
+
 
 var firstName = writeUs.querySelector("[name=firstname-lastname]");
 var email = writeUs.querySelector("[name=email]");
@@ -30,23 +39,22 @@ var storage = "";
 
 try {
   storage = localStorage.getItem("email")
-} catch(err){
-    isStorageSupport = false;
+} catch (err) {
+  isStorageSupport = false;
 }
 
 
-
-contactUsLink.addEventListener("click", function(evt){
-evt.preventDefault();
+contactUsLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
 // console.log("click on link");
-writeUs.classList.add("modal-show");
-firstName.focus();
-if(storage){
-  email.value = storage;
-}
+  writeUs.classList.add("modal-show");
+  firstName.focus();
+  if (storage) {
+    email.value = storage;
+  }
 });
 
-writeUsClose.addEventListener("click", function (evt){
+writeUsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUs.classList.remove("modal-show");
   // writeUs.classList.remove("modal-error");
@@ -55,23 +63,60 @@ writeUsClose.addEventListener("click", function (evt){
 writeUs.addEventListener("click", function (evt) {
 // submit not work
 
-  if (!firstName.value || !email.value || !text.value){
+  if (!firstName.value || !email.value || !text.value) {
     evt.preventDefault();
     // writeUs.classList.remove("modal-error");
     // writeUs.offsetWidth = writeUs.offsetWidth;
     // writeUs.classList.add("modal-error")
-  } else{
-    if(isStorageSupport){
-    localStorage.setItem("email", email.value)
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("email", email.value)
     }
-  };
+  }
+  ;
 });
 
-window.addEventListener("keydown", function(evt){
-  if(evt.keyCode === 27){
-    if(writeUs.classList.contains("modal-show")){
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (writeUs.classList.contains("modal-show")) {
       evt.preventDefault();
       writeUs.classList.remove("modal-show");
+    }
+  }
+});
+
+
+// catalog
+buyButtons.forEach(function( button)  {
+  button.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    console.log("asdfasdf");
+    buyPopup.classList.add("working-block");
+  });
+});
+
+
+var buyButtons = document.querySelector(".buy");
+var buyPopup = document.querySelector(".add-basket");
+var buyClose = document.querySelector(".close-add-basket");
+
+
+buyButtons.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  console.log("asdfasdf");
+  buyPopup.classList.add("working-block");
+});
+
+buyClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buyPopup.classList.remove("working-block")
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (buyPopup.classList.contains("working-block")) {
+      evt.preventDefault();
+      writeUs.classList.remove("working-block");
     }
   }
 });
