@@ -2018,8 +2018,9 @@ input[type="radio"].visually-hidden {
   border: 8px solid var(--basic-white);
   top: 31px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  /*h w 4px*/
+  width: 20px;
+  height: 20px;
   padding: 0;
   background-color: #ABABAB;
   border-radius: 50%;
