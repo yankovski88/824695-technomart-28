@@ -1388,7 +1388,18 @@ input[type="radio"].visually-hidden {
   background: url("../img/shadow.svg") no-repeat;
 }
 
-.box-delivery {
+.box-service-wrap-delivery{
+  display: none;
+}
+.box-service-wrap-guarantee{
+  display: none;
+}
+.box-service-credit{
+  display: none;
+}
+
+.box-service {
+  /*display: none;*/
   max-width: 313px;
   min-height: 159px;
   margin-left: 80px;

@@ -85,15 +85,54 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+var buttonDelivery = document.querySelector(".block-button-delivery");
+var service = document.querySelector(".box-service-wrap-delivery");
+
+var buttonGuarantee = document.querySelector(".block-button-guarantee");
+var guarantee = document.querySelector(".box-service-wrap-guarantee");
+
+var buttonCredit = document.querySelector(".block-button-credit");
+var credit = document.querySelector(".box-service-credit")
+
+
+buttonDelivery.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  service.classList.add("working-block");
+  guarantee.classList.remove("working-block");
+  credit.classList.remove("working-block");
+
+  buttonCredit.classList.remove("block-button-active");
+  buttonDelivery.classList.add("block-button-active");
+  buttonGuarantee.classList.remove("block-button-active");
+});
+
+buttonGuarantee.addEventListener("click", function (evt){
+  evt.preventDefault();
+  guarantee.classList.add("working-block")
+  service.classList.remove("working-block");
+  credit.classList.remove("working-block");
+
+  buttonCredit.classList.remove("block-button-active");
+  buttonDelivery.classList.remove("block-button-active");
+  buttonGuarantee.classList.add("block-button-active");
+});
+
+buttonCredit.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  credit.classList.add("working-block");
+  service.classList.remove("working-block");
+  guarantee.classList.remove("working-block");
+
+  buttonCredit.classList.add("block-button-active");
+  buttonDelivery.classList.remove("block-button-active");
+  buttonGuarantee.classList.remove("block-button-active");
+});
+
+
+
+
 
 // catalog
-buyButtons.forEach(function( button)  {
-  button.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    console.log("asdfasdf");
-    buyPopup.classList.add("working-block");
-  });
-});
 
 
 var buyButtons = document.querySelector(".buy");
@@ -101,22 +140,31 @@ var buyPopup = document.querySelector(".add-basket");
 var buyClose = document.querySelector(".close-add-basket");
 
 
-buyButtons.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  console.log("asdfasdf");
-  buyPopup.classList.add("working-block");
-});
+// buyButtons.forEach(function( button)  {
+//   button.addEventListener("click", function (evt) {
+//     evt.preventDefault();
+//     console.log("asdfasdf");
+//     buyPopup.classList.add("working-block");
+//   });
+// });
 
-buyClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  buyPopup.classList.remove("working-block")
-});
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (buyPopup.classList.contains("working-block")) {
-      evt.preventDefault();
-      writeUs.classList.remove("working-block");
-    }
-  }
-});
+// buyButtons.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   console.log("asdfasdf");
+//   buyPopup.classList.add("working-block");
+// });
+
+// buyClose.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   buyPopup.classList.remove("working-block")
+// });
+//
+// window.addEventListener("keydown", function (evt) {
+//   if (evt.keyCode === 27) {
+//     if (buyPopup.classList.contains("working-block")) {
+//       evt.preventDefault();
+//       writeUs.classList.remove("working-block");
+//     }
+//   }
+// });
