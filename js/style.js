@@ -135,7 +135,7 @@ buttonCredit.addEventListener("click", function (evt) {
 // catalog
 
 
-var buyButtons = document.querySelector(".buy");
+var buyButtons = document.querySelectorAll(".buy");
 var buyPopup = document.querySelector(".add-basket");
 var buyClose = document.querySelector(".close-add-basket");
 
@@ -149,22 +149,22 @@ var buyClose = document.querySelector(".close-add-basket");
 // });
 
 
-// buyButtons.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   console.log("asdfasdf");
-//   buyPopup.classList.add("working-block");
-// });
+buyButtons.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  console.log("asdfasdf");
+  buyPopup.classList.add("working-block");
+});
 
-// buyClose.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   buyPopup.classList.remove("working-block")
-// });
-//
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27) {
-//     if (buyPopup.classList.contains("working-block")) {
-//       evt.preventDefault();
-//       writeUs.classList.remove("working-block");
-//     }
-//   }
-// });
+buyClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  buyPopup.classList.remove("working-block")
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (buyPopup.classList.contains("working-block")) {
+      evt.preventDefault();
+      writeUs.classList.remove("working-block");
+    }
+  }
+});
