@@ -1855,7 +1855,6 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 }
 
-
 .write_us_close-img {
   background: transparent;
   margin: 0;
@@ -2540,7 +2539,6 @@ fieldset {
   height: 70px;
   display: flex;
   margin-left: 148px;
-  /*margin-right: 0;*/
 }
 
 .img-catalog-wrap {
@@ -2701,13 +2699,22 @@ fieldset {
 }
 
 .add-basket {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
   display: none;
-  margin-right: auto;
-  margin-left: auto;
   background: var(--basic-white);
   width: 620px;
-  min-height: 282px;
+  height: 282px;
+  /*можно ли сделать модальное окно не указывая конкретную высоту*/
   border-top: 7px solid var(--basic-red);
+}
+
+.window-block{
+  display: block;
 }
 
 .close-add-basket {
@@ -2723,7 +2730,7 @@ fieldset {
 .row-basket {
   display: flex;
   align-items: center;
-  margin-top: 23px;
+  margin-top: 16px;
   margin-bottom: 49px;
 }
 

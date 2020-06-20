@@ -5,6 +5,7 @@ var writeUsClose = writeUs.querySelector(".write_us_close-img");
 var linkMap = document.querySelector(".contact-img")
 var popupMap = document.querySelector(".modal-map")
 var mapClose = document.querySelector(".close-img");
+
 linkMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   // console.log("klick map");
@@ -151,22 +152,20 @@ var buyClose = document.querySelector(".close-add-basket");
 
 buyButtons.addEventListener("click", function (evt) {
   evt.preventDefault();
-  console.log("asdfasdf");
-  buyPopup.classList.add("working-block");
+  buyPopup.classList.add("window-block");
 });
 
 buyClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  buyPopup.classList.remove("working-block")
+  buyPopup.classList.remove("window-block")
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (buyPopup.classList.contains("working-block")) {
+    if (buyPopup.classList.contains("window-block")) {
       evt.preventDefault();
-      writeUs.classList.remove("working-block");
+      writeUs.classList.remove("window-block");
     }
   }
 });
 
-// test pull request
