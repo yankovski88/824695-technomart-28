@@ -68,7 +68,8 @@ a:hover {
 button:hover {
   cursor: pointer;
 }
-.toggle, button, input, a:focus{
+
+.toggle, button, textarea, input, a:focus {
   outline: none;
 }
 
@@ -403,9 +404,13 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 30px;
   background: var(--basic-white-light);
-  width: 270px;
-  padding-left: 37px;
+  width: 264px;
+  /*padding-left: 37px;*/
   border: 3px solid var(--basic-white);
+}
+
+.phone-number-catalog {
+
 }
 
 .phone-number:before {
@@ -414,9 +419,10 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   width: 18px;
   height: 19px;
-  margin-right: 16px;
+  margin-right: 17px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 36px;
 }
 
 .phone-number:hover {
@@ -816,7 +822,7 @@ input[type="radio"].visually-hidden {
 
 .widget-icon-left {
   border: none;
-  background: none;
+  background: transparent;
   background-image: url("../img/icon-left.svg");
   width: 21px;
   height: 39px;
@@ -824,7 +830,7 @@ input[type="radio"].visually-hidden {
 
 .widget-icon-right {
   border: none;
-  background: none;
+  background: transparent;
   background-image: url("../img/icon-right.svg");
   width: 21px;
   height: 39px;
@@ -871,7 +877,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 30px;
   height: 10px;
-  padding-top: 6px;
+  padding-top: 11px;
 }
 
 .widget-dot {
@@ -887,8 +893,8 @@ input[type="radio"].visually-hidden {
 }
 
 .widget-dot-active {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   background-color: var(--basic-red);
   border: solid 2px var(--basic-white);
   border-radius: 50%;
@@ -1089,14 +1095,16 @@ input[type="radio"].visually-hidden {
 
 .firm-wrap {
   border: 1px solid #EAEAEA;
-  min-width: 220px;
-  min-height: 145px;
+  min-width: 218px;
+  min-height: 143px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.firm-wrap-interskol{
-  margin-top: -20px;
+
+.firm-interskol {
+  margin-top: -18px;
+  margin-left: -5px;
 }
 
 .firm-wrap:hover {
@@ -1176,6 +1184,7 @@ input[type="radio"].visually-hidden {
 
 .block-button:hover {
   background: #293449;
+  color: var(--basic-white);
   box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
@@ -1253,7 +1262,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-contact {
-  min-height: 496px;
+  min-height: 494px;
 }
 
 .contact-row {
@@ -1365,6 +1374,7 @@ input[type="radio"].visually-hidden {
 .about-us-contact-wrap-link {
   display: flex;
   justify-content: space-between;
+  margin-top: -1px;
 }
 
 .footer-wrap {
@@ -1390,7 +1400,7 @@ input[type="radio"].visually-hidden {
 
 .footer-logo-style {
   width: 220px;
-  height: 68px;
+  height: 63px;
   background-color: var(--basic-red);
   border-bottom: var(--logo-border) solid 5px;
   display: flex;
@@ -1455,6 +1465,7 @@ input[type="radio"].visually-hidden {
 
 .footer-text {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .footer-phone {
@@ -1522,9 +1533,11 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   vertical-align: middle;
   color: #FFFFFF;
+  margin-top: 2px;
 }
 
 .social-list {
+  margin-top: 0;
   margin-left: 139px;
   padding: 0;
   display: flex;
@@ -1640,6 +1653,7 @@ input[type="radio"].visually-hidden {
 
 .map {
   z-index: 10;
+  position: absolute;
 }
 
 .modal-map-img {
@@ -1658,7 +1672,7 @@ input[type="radio"].visually-hidden {
 }
 
 .close-img {
-  z-index: 1;
+  z-index: 100;
   background: none;
   padding: 0;
   margin: 0;
@@ -1667,8 +1681,9 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
-  margin-left: -49px;
-  margin-top: 29px;
+  margin-left: auto;
+  margin-right: 28px;
+  margin-top: 10px;
 }
 
 .close-img-none {
@@ -1688,11 +1703,11 @@ input[type="radio"].visually-hidden {
   position: fixed;
   border-top: 7px solid var(--basic-red-light);
   width: 620px;
-  height: 430px;
+  height: 423px;
   background: var(--basic-white);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;*/
+  /*align-items: center;*/
   flex-direction: column;
 }
 
@@ -1750,7 +1765,7 @@ input[type="radio"].visually-hidden {
 .write_us-row {
   display: flex;
   justify-content: space-between;
-  max-width: 460px;
+  width: 460px;
 }
 
 .write_us-column {
@@ -1775,23 +1790,40 @@ input[type="radio"].visually-hidden {
 
 .name-input,
 .email-input {
+  padding: 0;
+  margin: 0;
+  border: solid 2px #c5c5c5;
+  background: var(--basic-white);
   margin-top: 11px;
   margin-bottom: 13px;
+  width: 196px;
+  height: 22px;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 7px;
-  border: solid 2px #c5c5c5;
 }
 
 .text-message-input {
   margin-top: 11px;
   border: solid 2px #c5c5c5;
   margin-bottom: 37px;
-  padding: 11px;
-  resize: none;
+  padding-right: 11px;
+  padding-left: 12px;
+  padding-top: 6px;
+  padding-bottom: 11px;
+  height: 93px;
+  width: 433px;
+  /*resize: none;*/
 }
 
-.text-message-input::placeholder{
+/*#text-message {*/
+/*width: 460px;*/
+/*height: 114px;*/
+/*margin-bottom: 39px;*/
+/*}*/
+
+.text-message-input::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1799,7 +1831,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #A9A9A9;
 }
-.name-input::placeholder{
+
+.name-input::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1807,7 +1840,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #A9A9A9;
 }
-.email-input::placeholder{
+
+.email-input::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1817,16 +1851,12 @@ input[type="radio"].visually-hidden {
   align-items: center;
   color: #A9A9A9;
 }
+
 .write_us-column-text {
   display: flex;
   flex-direction: column;
-  /*margin-top: 5px;*/
 }
 
-#firstname-lastname {
-  width: 220px;
-  height: 38px;
-}
 
 .write_us_close-img {
   background: transparent;
@@ -1844,20 +1874,9 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-#email {
-  width: 220px;
-  height: 38px;
-}
-
-#text-message {
-  width: 460px;
-  height: 114px;
-  margin-bottom: 39px;
-}
-
 .write_us-low {
   background: var(--basic-gray-light3);
-  min-height: 110px;
+  min-height: 112px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1994,12 +2013,13 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
   position: relative;
-  height: 80px;
+  height: 41px;
   margin-bottom: 9px;
   padding-top: 39px;
   background: #F7F3EC;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 0;
 }
 
 .scale {
@@ -2018,9 +2038,8 @@ input[type="radio"].visually-hidden {
   border: 8px solid var(--basic-white);
   top: 31px;
   left: 0;
-  /*h w 4px*/
-  width: 20px;
-  height: 20px;
+  width: 4px;
+  height: 4px;
   padding: 0;
   background-color: #ABABAB;
   border-radius: 50%;
@@ -2040,6 +2059,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 220px;
 }
 
 .price-controls label {
@@ -2049,33 +2069,47 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls input {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: normal;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
   line-height: 18px;
-  padding: 11px 10px 12px 26px;
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-black);
-  width: 95px;
+  width: 91px;
   background: #F7F3EC;
   border: none;
-  min-height: 38px;
+  min-height: 36px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .line {
+  display: flex;
+  height: 1px;
+  width: 100%;
   margin-top: 25px;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
+  background-color: #E5E5E5;
 }
 
 .filter-firm {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .line2 {
   margin-top: 10px;
   margin-bottom: 18px;
+  background-color: #E5E5E5;
+  height: 1px;
+  width: 100%;
 }
 
 .between-stick {
@@ -2085,13 +2119,18 @@ input[type="radio"].visually-hidden {
 }
 
 .box-filter-title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
   display: flex;
   align-items: center;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 18px;
   background: #F7F3EC;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -2110,11 +2149,6 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-hr {
-  margin: 0;
-  margin-bottom: 16px;
-}
-
 .filter-text {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
@@ -2131,8 +2165,8 @@ hr {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #c5c5c5;
   border-radius: 3px;
   margin-right: 8px;
@@ -2182,15 +2216,18 @@ hr {
   opacity: 0.3;
 }
 
+.filter-battery {
+  margin-bottom: 18px;
+  border: none;
+}
+
 fieldset {
   padding: 0;
 }
 
-.filter-battery {
-  margin-bottom: 18px;
-}
-
-fieldset p {
+.filter-option {
+  padding: 0;
+  margin: 0;
   margin-bottom: 16px;
 }
 
@@ -2229,6 +2266,11 @@ fieldset p {
 }
 
 .filter-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
   background: var(--basic-white);
   border: 1px solid #E5E5E5;
   box-sizing: border-box;
@@ -2505,7 +2547,6 @@ fieldset p {
 
 .img-catalog-wrap {
   width: 218px;
-  /*ПОчему 220px по макету не подходит ведь там бордер указан*/
   height: 179px;
   background: var(--basic-white);
   display: flex;
@@ -2578,7 +2619,7 @@ fieldset p {
 }
 
 .button-number-page {
-  margin-right: 10px;
+  margin-right: 11px;
   background: var(--basic-white);
   border: 1px solid #E5E5E5;
   box-sizing: border-box;
@@ -2593,10 +2634,10 @@ fieldset p {
   align-items: center;
   text-align: center;
   color: var(--basic-black);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 14px;
+  padding-left: 14px;
 }
 
 .button-number-page-next {
