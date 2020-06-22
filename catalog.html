@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+<body class="page-body">
 <header class="header">
 
   <div class="cap">
@@ -19,7 +20,8 @@
       <div class="header-up">
 
         <form class="top-menu__form form-search" action="https://echo.htmlacademy.ru/" method="GET">
-          <input class="form-search__input" type="search" name="search" id="search-field" placeholder="Поиск:">
+          <input class="form-search__input" type="search" name="search" id="search-field"
+                 placeholder="Поиск:">
           <label class="form-search__label" for="search-field">
             <svg class="form-search__icon" width="17" height="17" viewBox="0 0 17 17"
                  xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +32,7 @@
           </label>
         </form>
 
-        <a class="bookmark-item" href="#" aria-label="Закладки">Закладки: 0</a>
+        <a class="bookmark-item bookmark-item-catalog" href="#" aria-label="Закладки">Закладки: 0</a>
         <a class="basket-item basket-item-catalog" href="#" aria-label="Корзина">Корзина: 10</a>
         <a class="make-order" href="#" aria-label="Оформить заказ">Оформить заказ</a>
       </div>
@@ -114,6 +116,7 @@
     <h2 class="perforator">Перфораторы</h2>
 
     <div class="catalog">
+      <h2 class="visually-hidden">Каталог перфораторов</h2>
       <section class="filter-wrap">
 
         <span class="box-filter-title">Фильтр:</span>
@@ -261,7 +264,7 @@
               <a class="link-product-catalog" href="#">Перфоратор&nbsp;BOSCH
                 BFG&nbsp;6000</a>
               <span class="old-price-catalog">30500 Р.</span>
-              <button class="new-price-catalog">15500 Р.</button>
+              <button class="new-price-catalog">25500 Р.</button>
             </div>
           </div>
 
@@ -505,7 +508,7 @@
              aria-label="ссылка на почту компании">mail@htmlacademy.ru</a>
         </div>
         <div class="footer-low-column2">
-          <span>Разработано -</span>
+          <span>Разработано &mdash;</span>
           <a class="link" href="https://htmlacademy.ru/intensive/htmlcss"
              aria-label="ссылка на разработчика сайта">htmlacademy.ru</a>
         </div>

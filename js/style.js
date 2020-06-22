@@ -136,7 +136,7 @@ buttonCredit.addEventListener("click", function (evt) {
 // catalog
 
 
-var buyButtons = document.querySelectorAll(".buy");
+var buy = document.querySelectorAll(".buy");
 var buyPopup = document.querySelector(".add-basket");
 var buyClose = document.querySelector(".close-add-basket");
 
@@ -150,8 +150,9 @@ var buyClose = document.querySelector(".close-add-basket");
 // });
 
 
-buyButtons.addEventListener("click", function (evt) {
+buy.addEventListener("click", function (evt) {
   evt.preventDefault();
+  console.log("asdfasdfsad")
   buyPopup.classList.add("window-block");
 });
 
