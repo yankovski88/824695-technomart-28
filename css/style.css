@@ -164,7 +164,6 @@ input[type="radio"].visually-hidden {
   color: var(--basic-white);
 }
 
-
 .form-search__label {
   position: absolute;
   width: 17px;
@@ -259,7 +258,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
 }
 
-.bookmark-item-catalog{
+.bookmark-item-catalog {
   margin-right: 15px;
 
 }
@@ -1116,11 +1115,12 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
 }
-.firm-makita{
+
+.firm-makita {
   margin-top: -6px;
 }
 
-.firm-dewalt{
+.firm-dewalt {
   margin-top: -5px;
 }
 
@@ -1834,8 +1834,6 @@ input[type="radio"].visually-hidden {
   height: 93px;
   width: 433px;
 }
-
-
 
 .text-message-input::placeholder {
   font-family: "PT Sans", Arial, sans-serif;
@@ -2727,7 +2725,7 @@ fieldset {
   border-top: 7px solid var(--basic-red);
 }
 
-.window-block{
+.window-block {
   display: block;
 }
 
