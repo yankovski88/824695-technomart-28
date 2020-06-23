@@ -8,14 +8,12 @@ var mapClose = document.querySelector(".close-img");
 
 linkMap.addEventListener("click", function (evt) {
   evt.preventDefault();
-  // console.log("klick map");
   popupMap.classList.add("map-active")
   mapClose.classList.add("close-img-active")
 });
 
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  // console.log("cklick enter esx");
   popupMap.classList.remove("map-active")
 });
 
@@ -47,7 +45,6 @@ try {
 
 contactUsLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-// console.log("click on link");
   writeUs.classList.add("modal-show");
   firstName.focus();
   if (storage) {
@@ -58,17 +55,15 @@ contactUsLink.addEventListener("click", function (evt) {
 writeUsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUs.classList.remove("modal-show");
-  // writeUs.classList.remove("modal-error");
 });
 
 writeUs.addEventListener("click", function (evt) {
-// submit not work
 
   if (!firstName.value || !email.value || !text.value) {
     evt.preventDefault();
-    // writeUs.classList.remove("modal-error");
-    // writeUs.offsetWidth = writeUs.offsetWidth;
-    // writeUs.classList.add("modal-error")
+    writeUs.classList.remove("modal-error");
+    writeUs.offsetWidth = writeUs.offsetWidth;
+    writeUs.classList.add("modal-error")
   } else {
     if (isStorageSupport) {
       localStorage.setItem("email", email.value)
@@ -85,6 +80,7 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
 
 var buttonDelivery = document.querySelector(".block-button-delivery");
 var service = document.querySelector(".box-service-wrap-delivery");
@@ -107,7 +103,7 @@ buttonDelivery.addEventListener("click", function (evt) {
   buttonGuarantee.classList.remove("block-button-active");
 });
 
-buttonGuarantee.addEventListener("click", function (evt){
+buttonGuarantee.addEventListener("click", function (evt) {
   evt.preventDefault();
   guarantee.classList.add("working-block")
   service.classList.remove("working-block");
@@ -130,9 +126,6 @@ buttonCredit.addEventListener("click", function (evt) {
 });
 
 
-
-
-
 // catalog
 
 
@@ -152,7 +145,6 @@ var buyClose = document.querySelector(".close-add-basket");
 
 buy.addEventListener("click", function (evt) {
   evt.preventDefault();
-  console.log("asdfasdfsad")
   buyPopup.classList.add("window-block");
 });
 

@@ -300,7 +300,6 @@ input[type="radio"].visually-hidden {
 .basket-item {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 150px;
   height: 42px;
 
@@ -310,6 +309,17 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+}
+
+.basket-item:before {
+  content: "";
+  display: flex;
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+  margin-right: 8px;
+  margin-left: 25px;
+  background-image: url("../img/icon-cart.svg");
 }
 
 .basket-item-catalog {
@@ -1395,7 +1405,7 @@ input[type="radio"].visually-hidden {
 .about-us-contact-wrap-link {
   display: flex;
   justify-content: space-between;
-  margin-top: 4px;
+  margin-top: 0; /*4*/
 }
 
 .footer-wrap {
@@ -1474,6 +1484,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-block {
+  padding-left: 2px; /*no*/
   min-width: 321px;
   min-height: 49px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1759,7 +1770,7 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce {
   0% {
-    transform: translateY(2000px);
+    transform: translateY(-4000px);
   }
   70% {
     transform: translateY(30px);
@@ -2623,7 +2634,7 @@ fieldset {
 
 .number-page {
   display: flex;
-  margin-bottom: 59px;
+  margin-bottom: 56px; /*59*/
   margin-left: 240px;
 }
 
@@ -2697,7 +2708,7 @@ fieldset {
 }
 
 .about-perforator-text-wrap {
-  padding-bottom: 71px;
+  padding-bottom: 69px; /*71*/
 }
 
 .about-perforator-text-wrap p {
