@@ -2554,6 +2554,7 @@ fieldset {
 
 .card-catalog:hover .buy-add-item {
   display: flex;
+  /*z-index: 101;*/
 }
 
 .box-icon-new-catalog {
@@ -2734,6 +2735,7 @@ fieldset {
   width: 620px;
   height: 282px;
   border-top: 7px solid var(--basic-red);
+  z-index: 101;
 }
 
 .window-block {

@@ -1,3 +1,6 @@
+// index
+
+
 var contactUsLink = document.querySelector(".contact-link");
 var writeUs = document.querySelector(".write_us");
 var writeUsClose = writeUs.querySelector(".write_us_close-img");
@@ -127,39 +130,23 @@ buttonCredit.addEventListener("click", function (evt) {
 });
 
 
-// catalog
-
-
-var buy = document.querySelectorAll(".buy");
-var buyPopup = document.querySelector(".add-basket");
-var buyClose = document.querySelector(".close-add-basket");
-
-
-// buyButtons.forEach(function( button)  {
-//   button.addEventListener("click", function (evt) {
-//     evt.preventDefault();
-//     console.log("asdfasdf");
-//     buyPopup.classList.add("working-block");
-//   });
+// buy.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   console.log("abra");
+//   buyPopup.classList.add("window-block");
 // });
-
-
-buy.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  buyPopup.classList.add("window-block");
-});
-
-buyClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  buyPopup.classList.remove("window-block")
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (buyPopup.classList.contains("window-block")) {
-      evt.preventDefault();
-      writeUs.classList.remove("window-block");
-    }
-  }
-});
+//
+// buyClose.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   buyPopup.classList.remove("window-block")
+// });
+//
+// window.addEventListener("keydown", function (evt) {
+//   if (evt.keyCode === 27) {
+//     if (buyPopup.classList.contains("window-block")) {
+//       evt.preventDefault();
+//       writeUs.classList.remove("window-block");
+//     }
+//   }
+// });
 
