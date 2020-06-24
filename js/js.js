@@ -1,6 +1,7 @@
 var contactUsLink = document.querySelector(".contact-link");
 var writeUs = document.querySelector(".write_us");
 var writeUsClose = writeUs.querySelector(".write_us_close-img");
+var buttonSend = document.querySelector(".button-send");
 
 var linkMap = document.querySelector(".contact-img")
 var popupMap = document.querySelector(".modal-map")
@@ -57,19 +58,19 @@ writeUsClose.addEventListener("click", function (evt) {
   writeUs.classList.remove("modal-show");
 });
 
-writeUs.addEventListener("click", function (evt) {
+
+buttonSend.addEventListener("click", function (evt) {
 
   if (!firstName.value || !email.value || !text.value) {
     evt.preventDefault();
     writeUs.classList.remove("modal-error");
     writeUs.offsetWidth = writeUs.offsetWidth;
-    writeUs.classList.add("modal-error")
+    writeUs.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("email", email.value)
+      localStorage.setItem("email", email.value);
     }
   }
-  ;
 });
 
 window.addEventListener("keydown", function (evt) {
