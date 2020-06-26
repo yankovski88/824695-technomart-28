@@ -129,24 +129,35 @@ buttonCredit.addEventListener("click", function (evt) {
   buttonGuarantee.classList.remove("block-button-active");
 });
 
+var sliderWidget1 = document.querySelector(".widget1");
+var sliderWidget2 = document.querySelector(".widget2");
+var leftLink = document.querySelector(".widget-icon-left");
+var rightLink = document.querySelector(".widget-icon-right");
+var dot1Button = document.querySelector(".widget-dot1");
+var dot2Button = document.querySelector(".widget-dot2");
 
-// buy.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   console.log("abra");
-//   buyPopup.classList.add("window-block");
-// });
-//
-// buyClose.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   buyPopup.classList.remove("window-block")
-// });
-//
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27) {
-//     if (buyPopup.classList.contains("window-block")) {
-//       evt.preventDefault();
-//       writeUs.classList.remove("window-block");
-//     }
-//   }
-// });
+
+dot1Button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  dot1Button.classList.add("widget-dot-active");
+  dot2Button.classList.remove("widget-dot-active");
+  sliderWidget1.classList.add("window-block");
+  sliderWidget2.classList.remove("window-block");
+});
+
+dot2Button.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  dot2Button.classList.add("widget-dot-active");
+  dot1Button.classList.remove("widget-dot-active");
+  sliderWidget2.classList.add("window-block");
+  sliderWidget1.classList.remove("window-block");
+});
+
+
+
+
+
+
+
+
 

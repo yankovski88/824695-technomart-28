@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.min.css">
@@ -16,9 +15,10 @@
 
   <div class="cap">
     <div class="container-header">
-      <a href="index.html" class="logo-style">
+      <a class="logo-style">
         <img class="logo" src="img/logo-technomart-header.svg" width="107" height="17" alt="logo">
       </a>
+
       <div class="header-up">
 
         <form class="top-menu__form form-search" action="https://echo.htmlacademy.ru/" method="GET">
@@ -32,7 +32,6 @@
             <span class="visually-hidden">Поиск по сайту</span>
           </label>
         </form>
-
 
         <a class="bookmark-item" href="#" aria-label="Закладки">Закладки: 0</a>
         <a class="basket-item" href="#" aria-label="Корзина">Корзина: 0</a>
@@ -55,7 +54,7 @@
         </div>
 
         <div class="enter-wrap">
-          <button type="button" class="button-enter" aria-label="Кнопка войти">
+          <a href="" class="button-enter" aria-label="Кнопка войти">
 
             <svg class="icon-enter" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
               <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
@@ -64,7 +63,7 @@
             </svg>
 
             Войти
-          </button>
+          </a>
           <a class="registration" href="#" aria-label="Кнопка регистрация">Регистрация</a>
         </div>
       </div>
@@ -125,25 +124,37 @@
           <div class="box3-icon"></div>
         </div>
       </div>
+      <div class="widget-wrapper">
 
-      <div class="widget">
-        <div class="widget-column">
-          <span class="widget-title">Перфораторы</span>
-          <span class="widget-text">Настоящие мужские игрушки</span>
-        </div>
-        <div class="widget-control">
-          <button class="widget-icon-left"></button>
-          <button class="widget-icon-right"></button>
-        </div>
-        <div class="widget-wrap-row">
-          <a class="widget-link" href="catalog.html" aria-label="ссылка на каталог">Открыть каталог</a>
-          <div class="widget-wrap-slider">
-            <div class="widget-dot">
-            </div>
-            <div class="widget-dot widget-dot-active">
-            </div>
+
+        <div class="widget widget1 modal">
+          <div class="widget-column">
+            <span class="widget-title">Дрели</span>
+            <span class="widget-text">Соседям на радость!</span>
           </div>
+          <a class="widget-link" href="" aria-label="ссылка на каталог дрели">Открыть каталог</a>
         </div>
+
+        <div class="widget widget2 window-block promo__slider">
+          <div class="widget-column">
+            <span class="widget-title">Перфораторы</span>
+            <span class="widget-text">Настоящие мужские игрушки</span>
+          </div>
+          <a class="widget-link" href="catalog.html" aria-label="ссылка на каталог с перфораторами">Открыть каталог</a>
+        </div>
+
+        <div class="widget-control">
+          <button class="widget-icon-left" aria-label="кнопка гортать слайд в лево"></button>
+          <button class="widget-icon-right" aria-label="кнопка гортать слайд в право"></button>
+        </div>
+        <div class="widget-wrap-slider">
+          <button type="button" class="widget-dot widget-dot1" aria-label="включить первый слайд">
+          </button>
+          <button type="button" class="widget-dot widget-dot2 widget-dot-active" aria-label="включить второй слайд">
+          </button>
+        </div>
+
+
       </div>
 
       <div class="box4">
@@ -179,8 +190,8 @@
           <div class="img-catalog-wrap">
 
             <div class="buy-add-item">
-              <button class="buy" type="button">Купить</button>
-              <a href="" class="bookmark-add">В закладки</a>
+              <a class="buy" href="basket.html">Купить</a>
+              <button type="button" class="bookmark-add">В закладки</button>
             </div>
 
             <img class="product-item" src="img/bosch_bfg_9000.jpg" width="184" height="164" alt="bosch bfg 9000">
@@ -189,7 +200,7 @@
             <a class="link-product-catalog" href="#">Перфоратор&nbsp;BOSCH
               BFG&nbsp;9000</a>
             <span class="old-price-catalog">32500 Р.</span>
-            <button class="new-price-catalog">25500 Р.</button>
+            <span class="new-price-catalog">25500 Р.</span>
           </div>
         </div>
 
@@ -198,8 +209,8 @@
           <div class="img-catalog-wrap">
 
             <div class="buy-add-item">
-              <button class="buy" type="button">Купить</button>
-              <a href="" class="bookmark-add">В закладки</a>
+              <a class="buy" href="basket.html">Купить</a>
+              <button type="button" class="bookmark-add">В закладки</button>
             </div>
 
             <img class="product-item" src="img/bosh_3000.jpg" width="127" height="112"
@@ -209,7 +220,7 @@
             <a class="link-product-catalog" href="#">Перфоратор&nbsp;BOSCH
               BFG&nbsp;3000</a>
             <span class="old-price-catalog"> 22500 Р.</span>
-            <button class="new-price-catalog">15500 Р.</button>
+            <span class="new-price-catalog">15500 Р.</span>
           </div>
         </div>
 
@@ -217,8 +228,8 @@
           <div class="img-catalog-wrap">
 
             <div class="buy-add-item">
-              <button class="buy" type="button">Купить</button>
-              <a href="" class="bookmark-add">В закладки</a>
+              <a class="buy" href="basket.html">Купить</a>
+              <button type="button" class="bookmark-add">В закладки</button>
             </div>
 
             <img class="product-item" src="img/bosch_bfg_6000.jpg" width="144" height="128"
@@ -228,7 +239,7 @@
             <a class="link-product-catalog" href="#">Перфоратор&nbsp;BOSCH
               BFG&nbsp;6000</a>
             <span class="old-price-catalog">30500 Р.</span>
-            <button class="new-price-catalog">25500 Р.</button>
+            <span class="new-price-catalog">25500 Р.</span>
           </div>
         </div>
 
@@ -237,8 +248,8 @@
           <div class="img-catalog-wrap">
 
             <div class="buy-add-item">
-              <button class="buy" type="button">Купить</button>
-              <a href="" class="bookmark-add">В закладки</a>
+              <a class="buy" href="basket.html">Купить</a>
+              <button type="button" class="bookmark-add">В закладки</button>
             </div>
 
             <img class="product-item" src="img/bosh_3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
@@ -246,7 +257,7 @@
           <div class="wrap-product">
             <a class="link-product-catalog" href="#">Перфоратор&nbsp;BOSCH
               BFG&nbsp;2000</a>
-            <button class="new-price-catalog">12500 Р.</button>
+            <span class="new-price-catalog">12500 Р.</span>
           </div>
         </div>
       </div>
@@ -341,7 +352,7 @@
     <div class="about-us-contact">
       <div class="contact-row">
         <section class="about-us">
-          <h2>Компания «Техномарт»</h2>
+          <h2 class="about-us-title">Компания «Техномарт»</h2>
           <p class="about-us-text">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для
             ремонта&nbsp;и&nbsp;строительства не оставит равнодушными любителей сэкономить на
             гастарбайтарах</p>
@@ -356,7 +367,7 @@
         </section>
 
         <section class="contact-map">
-          <h2>Контакты</h2>
+          <h2 class="contact">Контакты</h2>
           <p class="contact-text">Вы можете забрать товар сами, заехав&nbsp;в&nbsp;наш&nbsp;офис:
           </p>
           <a class="contacts-button-map" href="map.html">
@@ -366,8 +377,8 @@
 
       </div>
       <div class="about-us-contact-wrap-link">
-        <a class="about-us-link" href="#" aria-label="ссылка на подробнее о компании">Подробнее о компании</a>
-        <button class="contact-link" type="button" aria-label="кнопка напишите нам">Заблудились? напишите нам!</button>
+        <a class="about-us-link" href="" aria-label="ссылка на подробнее о компании">Подробнее о компании</a>
+        <a href="form.html" class="contact-link" aria-label="кнопка напишите нам">Заблудились? напишите нам!</a>
       </div>
     </div>
   </div>
@@ -379,7 +390,7 @@
     <div class="container-footer">
       <div class="footer-up">
         <div class="footer-row">
-          <a href="index.html" class="footer-logo-style">
+          <a class="footer-logo-style">
             <img class="footer-logo" src="img/logo-technomart.svg" width="138" height="23" alt="logo">
           </a>
           <nav class="footer-navigation">
@@ -483,13 +494,13 @@
 
 
 <div class="modal-map map-none">
-  <!--<iframe class="map"-->
+  <iframe class="map"
 
-          <!--src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1583565446800!5m2!1sru!2sru"-->
-          <!--width="943" height="449" style="border: 0;" allowfullscreen="">-->
-  <!--</iframe>-->
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1583565446800!5m2!1sru!2sru"
+          width="943" height="449" style="border: 0;" allowfullscreen="">
+  </iframe>
   <img class="modal-map-img" width="943" height="449" src="img/map_popup.png" alt="map">
-  <button class="close-img close-img-none" type="button" ></button>
+  <button class="close-img close-img-none" type="button"></button>
 </div>
 
 <script src="js/script.min.js"></script>
