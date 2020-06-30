@@ -1430,7 +1430,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   padding-top: 70px;
   height: auto;
-  padding-bottom: 70px;
+  padding-bottom: 71px;
 }
 
 .about-us {
@@ -1464,7 +1464,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
-  margin-top: 24px;
+  margin-top: 26px;
   margin-bottom: 0;
 }
 
@@ -1472,7 +1472,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   margin-top: 3px;
 }
 /*.about-us-list:last-child{*/
@@ -1548,7 +1548,7 @@ input[type="radio"].visually-hidden {
   margin-top: 32px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 .contact-img {
 }
