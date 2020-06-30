@@ -181,7 +181,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.form-search__label:hover svg {
+.top-menu__form:hover svg {
   fill-opacity: 1;
 }
 
@@ -746,6 +746,32 @@ input[type="radio"].visually-hidden {
   color: var(--basic-white);
   margin-top: 20px;
   margin-bottom: 14px;
+  /*display: flex;*/
+}
+.box-text-material:after{
+  content: "";
+  display: flex;
+  position: absolute;
+  background-image: url("../img/icon_new.svg");
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  margin-left: 207px;
+  margin-top: -50px;
+  /*left: 381px;*/
+  /*top: 0;*/
+}
+/*.box-icon-new {*/
+  /*background-image: url("../img/icon_new.svg");*/
+  /*width: 70px;*/
+  /*height: 70px;*/
+  /*display: flex;*/
+  /*margin-left: auto;*/
+  /*margin-right: 0;*/
+/*}*/
+.box-text-sale{
+  margin-bottom: 12px;
+
 }
 
 .box-link {
@@ -781,23 +807,27 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 87px;
-}
 
-.box-icon {
   background-image: url("../img/pail.svg");
-  width: 44px;
-  height: 65px;
-  margin-top: -39px;
+  background-repeat: no-repeat;
+  background-position-y: 31px;
 }
 
-.box-icon-new {
-  background-image: url("../img/icon_new.svg");
-  width: 70px;
-  height: 70px;
-  display: flex;
-  margin-left: auto;
-  margin-right: 0;
-}
+/*.box-icon {*/
+  /*background-image: url("../img/pail.svg");*/
+  /*width: 44px;*/
+  /*height: 65px;*/
+  /*margin-top: -39px;*/
+/*}*/
+
+/*.box-icon-new {*/
+  /*background-image: url("../img/icon_new.svg");*/
+  /*width: 70px;*/
+  /*height: 70px;*/
+  /*display: flex;*/
+  /*margin-left: auto;*/
+  /*margin-right: 0;*/
+/*}*/
 
 .box2 {
   /*grid-area: b2;*/
@@ -805,22 +835,28 @@ input[type="radio"].visually-hidden {
   width: 300px;
   height: 123px;
   display: flex;
-}
-
-.box-column-icon {
-  display: flex;
-  flex-direction: column;
-  width: 143px;
-  height: 123px;
-  justify-content: center;
-  align-items: center;
-}
-
-.box2-icon {
   background-image: url("../img/drill.svg");
-  width: 75px;
-  height: 61px;
+  background-repeat: no-repeat;
+  background-position-y: 34px;
+  background-position-x: 195px;
 }
+
+/*.box-column-icon {*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*width: 143px;*/
+  /*height: 123px;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+
+/*}*/
+
+/*.box2-icon {*/
+  /*background-image: url("../img/drill.svg");*/
+  /*width: 75px;*/
+  /*height: 61px;*/
+/*}*/
 
 .box3 {
   /*grid-area: b3;*/
@@ -828,13 +864,17 @@ input[type="radio"].visually-hidden {
   height: 123px;
   background-color: var(--basic-lilac);
   display: flex;
+  background-image: url("../img/tractor.svg");
+  background-repeat: no-repeat;
+  background-position-y: 31px;
+  background-position-x: 191px;
 }
 
-.box3-icon {
-  background-image: url("../img/tractor.svg");
-  width: 78px;
-  height: 62px;
-}
+/*.box3-icon {*/
+  /*background-image: url("../img/tractor.svg");*/
+  /*width: 78px;*/
+  /*height: 62px;*/
+/*}*/
 
 .widget-wrapper {
   display: block;
@@ -987,13 +1027,18 @@ input[type="radio"].visually-hidden {
   height: 123px;
   background-color: var(--basic-green-light);
   display: flex;
+
+  background-image: url("../img/truck.svg");
+  background-repeat: no-repeat;
+  background-position-y: 26px;
+  background-position-x: 196px;
 }
 
-.box4-icon {
-  background-image: url("../img/truck.svg");
-  width: 59px;
-  height: 72px;
-}
+/*.box4-icon {*/
+  /*background-image: url("../img/truck.svg");*/
+  /*width: 59px;*/
+  /*height: 72px;*/
+/*}*/
 
 .box5 {
   /*grid-area: b5;*/
@@ -1001,13 +1046,19 @@ input[type="radio"].visually-hidden {
   width: 300px;
   height: 123px;
   display: flex;
+
+
+  background-image: url("../img/car.svg");
+background-repeat: no-repeat;
+  background-position-y: 32px;
+  background-position-x: 191px;
 }
 
-.box5-icon {
-  background-image: url("../img/car.svg");
-  width: 78px;
-  height: 63px;
-}
+/*.box5-icon {*/
+  /*background-image: url("../img/car.svg");*/
+  /*width: 78px;*/
+  /*height: 63px;*/
+/*}*/
 
 .pop-firm {
   margin-top: 70px;
@@ -1264,7 +1315,7 @@ input[type="radio"].visually-hidden {
 
 .block-button {
   width: 240px;
-  min-height: 62px;
+  min-height: 61px;
   text-align: left;
   padding-left: 22px;
   border: none;
@@ -1472,7 +1523,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   margin-top: 3px;
 }
 /*.about-us-list:last-child{*/
@@ -1548,7 +1599,7 @@ input[type="radio"].visually-hidden {
   margin-top: 32px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 .contact-img {
 }
