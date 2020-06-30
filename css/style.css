@@ -993,7 +993,7 @@ input[type="radio"].visually-hidden {
 .pop-firm {
   margin-top: 70px;
   background-color: var(--basic-white);
-  min-height: 489px;
+  min-height: 488px;
 }
 
 .title-wrap {
@@ -1157,7 +1157,6 @@ input[type="radio"].visually-hidden {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   margin-top: 20px;
-
 }
 
 .firm-wrap {
@@ -2798,12 +2797,15 @@ fieldset {
   align-items: center;
 }
 
-.wrap-product {
-  min-height: 138px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+/*.wrap-product {*/
+  /*min-height: 138px;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
+/*}*/
+
+.link-product-catalog + .new-price-catalog {
+  margin-top: 31px;}
 
 .link-product-catalog {
   font-family: "PT Sans", Arial, sans-serif;
@@ -2858,7 +2860,7 @@ fieldset {
 
 .number-page {
   display: flex;
-  margin-bottom: 56px; /*59*/
+  margin-bottom: 58px; /*59*/
   margin-left: 240px;
 }
 
@@ -2933,7 +2935,7 @@ fieldset {
 }
 
 .about-perforator-text-wrap {
-  padding-bottom: 72px; /*69*/
+  padding-bottom: 70px; /*69*/
 }
 
 .about-perforator-text-wrap p {
