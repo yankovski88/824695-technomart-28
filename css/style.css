@@ -373,16 +373,16 @@ input[type="radio"].visually-hidden {
   color: var(--basic-white);
 }
 
-.communication-wrap {
-  min-height: 158px;
-}
+/*.communication-wrap {*/
+  /*min-height: 158px;*/
+/*}*/
 
 .communication {
-
   display: flex;
   justify-content: space-between;
   background: var(--basic-gray-light4);
   padding-top: 46px;
+  margin-bottom: 26px;
 }
 
 .communication-text {
