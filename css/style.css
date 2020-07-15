@@ -1676,7 +1676,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
 }
 
@@ -1691,6 +1690,7 @@ input[type="radio"].visually-hidden {
   margin-right: 3px;
   fill: var(--basic-white);
 }
+
 
 .social-button:hover,
 .social-button:active {
